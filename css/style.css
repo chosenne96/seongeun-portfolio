@@ -182,6 +182,49 @@ a:hover {
   color: #7aaed4;
 }
 
+/* Language Toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lang-toggle-mobile {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.lang-btn:hover {
+  color: #c0c0c0;
+}
+
+.lang-btn.active {
+  color: #7aaed4;
+  background-color: rgba(122, 174, 212, 0.1);
+}
+
+.lang-divider {
+  color: #555;
+  font-size: 0.8rem;
+  user-select: none;
+}
+
 /* Social */
 .sidebar-social {
   display: flex;
@@ -224,6 +267,12 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+}
+
+.mobile-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .mobile-name {
