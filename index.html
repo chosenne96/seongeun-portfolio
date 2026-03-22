@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -314,7 +314,7 @@
     });
 
     // Language toggle
-    let currentLang = 'en';
+    let currentLang = 'kr';
 
     function setLanguage(lang) {
       currentLang = lang;
@@ -339,11 +339,9 @@
       btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
 
-    // Load saved preference
-    const savedLang = localStorage.getItem('lang');
-    if (savedLang && savedLang !== 'en') {
-      setLanguage(savedLang);
-    }
+    // Load saved preference or default to Korean
+    const savedLang = localStorage.getItem('lang') || 'kr';
+    setLanguage(savedLang);
   </script>
 
 </body>
