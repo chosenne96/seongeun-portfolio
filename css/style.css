@@ -463,6 +463,12 @@ a:hover {
   color: #7aaed4;
 }
 
+.project-period {
+  font-size: 0.78rem;
+  color: #888;
+  font-style: italic;
+}
+
 /* --- Skills --- */
 .skills-grid {
   display: grid;
