@@ -385,7 +385,7 @@ a:hover {
   font-size: 1.05rem;
   color: #c0c0c0;
   line-height: 1.8;
-  max-width: 650px;
+  width: 100%;
 }
 
 /* --- Project Cards --- */
@@ -515,7 +515,7 @@ a:hover {
 
 /* --- Contact --- */
 .contact-content {
-  max-width: 500px;
+  width: 100%;
 }
 
 .contact-content > p {
