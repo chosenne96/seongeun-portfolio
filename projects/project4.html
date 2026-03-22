@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>평균이 틀렸을 때 | Seong-eun Cho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-profile">
+          <div class="profile-photo-wrapper">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <img src="../images/profile.png" alt="Seong-eun Cho" class="profile-photo">
+          </div>
+          <h1 class="sidebar-name">Seong-eun Cho</h1>
+          <p class="sidebar-role">데이터 사이언티스트</p>
+          <p class="sidebar-affiliation">인지신경과학 &times; 데이터 사이언스</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="../index.html#about" class="nav-link">소개</a>
+          <a href="../index.html#projects" class="nav-link active">프로젝트</a>
+          <a href="../index.html#skills" class="nav-link">기술 스택</a>
+          <a href="../index.html#contact" class="nav-link">연락처</a>
+        </nav>
+
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+
+        <div class="sidebar-social">
+          <a href="https://github.com/chosenne96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:choseeng@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="sidebar-footer">
+          <p>&copy; 2026 Seong-eun Cho</p>
+        </div>
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <span class="mobile-name">Seong-eun Cho</span>
+      <div class="mobile-header-right">
+        <div class="lang-toggle-mobile">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-overlay">
+      <button class="mobile-close-btn" aria-label="Close">&times;</button>
+      <nav class="mobile-nav">
+        <a href="../index.html#about">소개</a>
+        <a href="../index.html#projects">프로젝트</a>
+        <a href="../index.html#skills">기술 스택</a>
+        <a href="../index.html#contact">연락처</a>
+      </nav>
+    </div>
+
+    <main class="main-content">
+
+      <a href="../index.html#projects" class="subpage-back"><i class="fas fa-arrow-left"></i> <span data-en="Back to Projects" data-kr="프로젝트 목록으로">프로젝트 목록으로</span></a>
+
+      <div class="subpage-header">
+        <div class="subpage-tags">
+          <span class="tag">MATLAB</span>
+          <span class="tag" data-en="Physiological Data" data-kr="생리 데이터">생리 데이터</span>
+          <span class="tag">Z-scoring</span>
+          <span class="tag" data-en="Individual Differences" data-kr="개인차 분석">개인차 분석</span>
+        </div>
+        <h1 class="subpage-title" data-en="When Averages Lie: From Group to Individual Analysis" data-kr="평균이 틀렸을 때: 집단 분석에서 개인차 분석으로의 전환">평균이 틀렸을 때: 집단 분석에서 개인차 분석으로의 전환</h1>
+        <p class="subpage-meta" data-en="2025 | SNU Developmental Cognitive Neuroscience Lab" data-kr="2025 | 서울대학교 발달인지신경과학 연구실">2025 | 서울대학교 발달인지신경과학 연구실</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Background" data-kr="배경">배경</h2>
+        <p data-en="Based on prior research showing that pupils dilate when people recognize context changes, we hypothesized that pupil dilation would differ between same-context and different-context transitions." data-kr="사람이 맥락이 바뀌는 시점을 인식할 때 동공이 확장된다는 선행연구를 바탕으로, 같은 맥락으로의 전환과 다른 맥락으로의 전환 간 동공 확장 크기가 다를 것이라는 가설을 세웠습니다.">사람이 맥락이 바뀌는 시점을 인식할 때 동공이 확장된다는 선행연구를 바탕으로, 같은 맥락으로의 전환과 다른 맥락으로의 전환 간 동공 확장 크기가 다를 것이라는 가설을 세웠습니다.</p>
+        <p data-en="The goal was to verify the context recognition mechanism by linking physiological data (pupil dilation) with behavioral data (path efficiency, reaction time)." data-kr="생리 데이터(동공 확장)와 행동 데이터(경로 효율성, 반응시간)를 연결해 맥락 인식 메커니즘을 검증하고자 했습니다.">생리 데이터(동공 확장)와 행동 데이터(경로 효율성, 반응시간)를 연결해 맥락 인식 메커니즘을 검증하고자 했습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Problem" data-kr="문제">문제</h2>
+        <p data-en="Group-level mean comparison showed no significant difference between conditions — contradicting prior research." data-kr="조건 간 평균 비교 분석 결과 유의한 차이가 나타나지 않았습니다. 선행연구와 반대되는 결과였습니다.">조건 간 평균 비교 분석 결과 유의한 차이가 나타나지 않았습니다. 선행연구와 반대되는 결과였습니다.</p>
+        <div class="subpage-highlight">
+          <p data-en="Rather than simply concluding 'no result,' I re-examined the data structure and found a fundamental issue: within the 'same context' condition, cases where participants perceived the environment as completely identical were mixed with cases where they perceived subtle differences. Behavioral data alone couldn't distinguish these two cases." data-kr="단순히 '결과 없음'으로 처리할 수도 있었지만, 데이터 구조를 다시 검토했을 때 근본적인 문제를 발견했습니다. '같은 맥락' 조건 안에서도 참가자가 환경을 완전히 동일하다고 인식한 경우와 미세하게 다르다고 인식한 경우가 섞여 있을 가능성이 있었습니다. 행동 데이터만으로는 이 두 경우를 구분할 수 없었습니다.">단순히 '결과 없음'으로 처리할 수도 있었지만, 데이터 구조를 다시 검토했을 때 근본적인 문제를 발견했습니다. '같은 맥락' 조건 안에서도 참가자가 환경을 완전히 동일하다고 인식한 경우와 미세하게 다르다고 인식한 경우가 섞여 있을 가능성이 있었습니다. 행동 데이터만으로는 이 두 경우를 구분할 수 없었습니다.</p>
+        </div>
+        <p data-en="The group average was potentially meaningless — the pattern wasn't absent, but was being erased during averaging." data-kr="결국 집단 평균이 무의미할 수 있는 상황이었습니다. 조건 간 차이가 없는 게 아니라, 평균을 내는 과정에서 패턴이 지워지고 있었을 수 있었습니다.">결국 집단 평균이 무의미할 수 있는 상황이었습니다. 조건 간 차이가 없는 게 아니라, 평균을 내는 과정에서 패턴이 지워지고 있었을 수 있었습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Approach" data-kr="사고 과정">사고 과정</h2>
+        <p data-en="Determined that group-level mean comparison couldn't solve this problem. Shifted the analysis frame entirely." data-kr="집단 평균 비교로는 이 문제를 해결할 수 없다고 판단했습니다. 분석 프레임을 전환했습니다.">집단 평균 비교로는 이 문제를 해결할 수 없다고 판단했습니다. 분석 프레임을 전환했습니다.</p>
+        <p data-en="Instead of 'condition differences,' I approached through 'individual differences.' If people with larger pupil dilation also show different behavioral patterns, it would indirectly verify that the pupil signal reflects actual context recognition." data-kr="'조건 간 차이'가 아닌 '개인 간 차이'로 접근했습니다. 동공 확장량이 큰 사람과 작은 사람이 행동적으로도 다른 패턴을 보인다면, 동공 신호가 실제로 맥락 인식을 반영한다는 것을 간접적으로 검증할 수 있었습니다.">'조건 간 차이'가 아닌 '개인 간 차이'로 접근했습니다. 동공 확장량이 큰 사람과 작은 사람이 행동적으로도 다른 패턴을 보인다면, 동공 신호가 실제로 맥락 인식을 반영한다는 것을 간접적으로 검증할 수 있었습니다.</p>
+        <p data-en="Applied within-subject z-scoring to remove absolute pupil size differences between individuals before re-analysis." data-kr="개인 간 절대적 동공 크기 편차를 제거하기 위해 참가자별 z-scoring을 적용한 후 재분석했습니다.">개인 간 절대적 동공 크기 편차를 제거하기 위해 참가자별 z-scoring을 적용한 후 재분석했습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Solution" data-kr="해결">해결</h2>
+        <p data-en="Performed correlation analysis between condition-wise pupil dilation (z-scored) and behavioral metrics:" data-kr="조건별 동공 확장량(z-scored)과 행동 지표 간 상관 분석을 수행했습니다:">조건별 동공 확장량(z-scored)과 행동 지표 간 상관 분석을 수행했습니다:</p>
+        <ul>
+          <li data-en="Same context: pupil dilation vs. path efficiency / RT efficiency" data-kr="Same context 조건: 동공 확장량 vs 경로 효율성 / RT 효율성">Same context 조건: 동공 확장량 vs 경로 효율성 / RT 효율성</li>
+          <li data-en="Different context: pupil dilation vs. sigmoid model fitting accuracy" data-kr="Different context 조건: 동공 확장량 vs sigmoid model fitting 정확도">Different context 조건: 동공 확장량 vs sigmoid model fitting 정확도</li>
+        </ul>
+        <p data-en="The conditions were analyzed separately because pupil dilation may reflect different cognitive processes in each condition." data-kr="Same / different 조건을 분리해서 분석한 이유는, 두 조건에서 동공 확장이 다른 인지 과정을 반영할 수 있기 때문이었습니다.">Same / different 조건을 분리해서 분석한 이유는, 두 조건에서 동공 확장이 다른 인지 과정을 반영할 수 있기 때문이었습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Results" data-kr="결과">결과</h2>
+        <ul>
+          <li data-en="Same context: marginal trend showing that participants with greater pupil dilation had higher overall path efficiency" data-kr="Same context 조건에서 동공이 더 확장된 사람일수록 전반적으로 경로 효율성이 높은 marginal trend를 확인했습니다">Same context 조건에서 동공이 더 확장된 사람일수록 전반적으로 경로 효율성이 높은 marginal trend를 확인했습니다</li>
+          <li data-en="Different context: marginal trend showing that participants with greater pupil dilation had poorer sigmoid model fitting" data-kr="Different context 조건에서 동공이 더 확장된 사람일수록 sigmoid model fitting이 잘 되지 않는 marginal trend를 확인했습니다">Different context 조건에서 동공이 더 확장된 사람일수록 sigmoid model fitting이 잘 되지 않는 marginal trend를 확인했습니다</li>
+          <li data-en="Individual difference patterns invisible in group means emerged after shifting the analysis frame" data-kr="집단 평균 비교에서 보이지 않던 개인차 패턴이 분석 프레임 전환 후 드러났습니다">집단 평균 비교에서 보이지 않던 개인차 패턴이 분석 프레임 전환 후 드러났습니다</li>
+        </ul>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Practical Implications" data-kr="실무 연결">실무 연결</h2>
+        <div class="subpage-highlight">
+          <p data-en="Even when group averages are not significant, meaningful patterns can exist at the individual difference level. In service logs, this is structurally identical to cases where signals invisible in overall user averages emerge in user-segment analysis." data-kr="집단 평균이 유의하지 않아도 개인차 수준에서 의미 있는 패턴이 존재할 수 있습니다. 서비스 로그에서도 전체 사용자 평균으로는 보이지 않는 신호가 사용자 세그먼트별 분석에서 드러나는 경우와 구조적으로 동일합니다.">집단 평균이 유의하지 않아도 개인차 수준에서 의미 있는 패턴이 존재할 수 있습니다. 서비스 로그에서도 전체 사용자 평균으로는 보이지 않는 신호가 사용자 세그먼트별 분석에서 드러나는 경우와 구조적으로 동일합니다.</p>
+        </div>
+        <p data-en="The experience of linking different types of data — physiological (pupil) and behavioral (path efficiency) — to identify patterns invisible to single metrics can be applied to integrating diverse service data for analysis." data-kr="생리 데이터(동공)와 행동 데이터(경로 효율)라는 서로 다른 종류의 데이터를 연결해 단일 지표로는 포착되지 않는 패턴을 식별한 경험은, 다양한 형태의 서비스 데이터를 통합해 분석하는 방식에 적용할 수 있다고 생각합니다.">생리 데이터(동공)와 행동 데이터(경로 효율)라는 서로 다른 종류의 데이터를 연결해 단일 지표로는 포착되지 않는 패턴을 식별한 경험은, 다양한 형태의 서비스 데이터를 통합해 분석하는 방식에 적용할 수 있다고 생각합니다.</p>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const overlay = document.querySelector('.mobile-overlay');
+    const closeBtn = document.querySelector('.mobile-close-btn');
+    menuBtn.addEventListener('click', () => overlay.classList.add('active'));
+    closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+    document.querySelectorAll('.mobile-nav a').forEach(link => link.addEventListener('click', () => overlay.classList.remove('active')));
+
+    let currentLang = 'kr';
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang === 'kr' ? 'ko' : 'en';
+      document.querySelectorAll('[data-en][data-kr]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+    const savedLang = localStorage.getItem('lang') || 'kr';
+    setLanguage(savedLang);
+  </script>
+
+</body>
+</html>

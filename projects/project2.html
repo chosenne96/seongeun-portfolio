@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>판단 편향을 데이터로 검증하기 | Seong-eun Cho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-profile">
+          <div class="profile-photo-wrapper">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <img src="../images/profile.png" alt="Seong-eun Cho" class="profile-photo">
+          </div>
+          <h1 class="sidebar-name">Seong-eun Cho</h1>
+          <p class="sidebar-role">데이터 사이언티스트</p>
+          <p class="sidebar-affiliation">인지신경과학 &times; 데이터 사이언스</p>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="../index.html#about" class="nav-link">소개</a>
+          <a href="../index.html#projects" class="nav-link active">프로젝트</a>
+          <a href="../index.html#skills" class="nav-link">기술 스택</a>
+          <a href="../index.html#contact" class="nav-link">연락처</a>
+        </nav>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+        <div class="sidebar-social">
+          <a href="https://github.com/chosenne96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:choseeng@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="sidebar-footer">
+          <p>&copy; 2026 Seong-eun Cho</p>
+        </div>
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <span class="mobile-name">Seong-eun Cho</span>
+      <div class="mobile-header-right">
+        <div class="lang-toggle-mobile">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="mobile-overlay">
+      <button class="mobile-close-btn" aria-label="Close">&times;</button>
+      <nav class="mobile-nav">
+        <a href="../index.html#about">소개</a>
+        <a href="../index.html#projects">프로젝트</a>
+        <a href="../index.html#skills">기술 스택</a>
+        <a href="../index.html#contact">연락처</a>
+      </nav>
+    </div>
+
+    <main class="main-content">
+
+      <a href="../index.html#projects" class="subpage-back"><i class="fas fa-arrow-left"></i> <span data-en="Back to Projects" data-kr="프로젝트 목록으로">프로젝트 목록으로</span></a>
+
+      <div class="subpage-header">
+        <div class="subpage-tags">
+          <span class="tag">R</span>
+          <span class="tag" data-en="Signal Detection Theory" data-kr="신호탐지이론">신호탐지이론</span>
+          <span class="tag" data-en="Statistics" data-kr="통계 분석">통계 분석</span>
+        </div>
+        <h1 class="subpage-title" data-en="Verifying Decision Bias with Data: A Change Detection Study" data-kr="판단 편향을 데이터로 검증하기: 변화탐지 복제 연구">판단 편향을 데이터로 검증하기: 변화탐지 복제 연구</h1>
+        <p class="subpage-meta" data-en="2023 | CAU Psychology Academic Festival" data-kr="2023 | 중앙대학교 심리학과 학술제 발표">2023 | 중앙대학교 심리학과 학술제 발표</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Background" data-kr="배경">배경</h2>
+        <p data-en="In real-world environments such as defect inspection and anomaly detection systems, inspectors must make judgments when anomaly rates are not constant. However, prior research had only been conducted in environments with a fixed 50% anomaly probability, leaving unverified how judgment patterns change in actual environments with varying probabilities." data-kr="불량 육안검사, 이상 탐지 시스템 등 실무 환경에서 검사자는 이상 발생 빈도가 일정하지 않은 상황에서 판단을 내려야 합니다. 그러나 기존 연구는 이상 발생 확률을 50%로 고정한 환경에서만 수행되어, 확률이 변하는 실제 환경에서 판단 패턴이 어떻게 달라지는지는 검증되지 않았습니다.">불량 육안검사, 이상 탐지 시스템 등 실무 환경에서 검사자는 이상 발생 빈도가 일정하지 않은 상황에서 판단을 내려야 합니다. 그러나 기존 연구는 이상 발생 확률을 50%로 고정한 환경에서만 수행되어, 확률이 변하는 실제 환경에서 판단 패턴이 어떻게 달라지는지는 검증되지 않았습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Problem" data-kr="문제">문제</h2>
+        <p data-en="When anomaly frequency decreases, inspectors may form the expectation 'it probably won't be there' and increase misses. Conversely, when frequency increases, false alarms may rise. Whether this decision bias is actually observed in data, and under what conditions it becomes prominent, had not been verified." data-kr="이상 발생 빈도가 낮아지면 검사자는 '어차피 없겠지'라는 기대를 형성하고 미탐(miss)이 늘어날 수 있습니다. 반대로 빈도가 높아지면 오탐(false alarm)이 증가할 수 있습니다. 이 판단 편향이 실제로 데이터에서 관찰되는지, 어떤 조건에서 두드러지는지 검증되지 않은 상태였습니다.">이상 발생 빈도가 낮아지면 검사자는 '어차피 없겠지'라는 기대를 형성하고 미탐(miss)이 늘어날 수 있습니다. 반대로 빈도가 높아지면 오탐(false alarm)이 증가할 수 있습니다. 이 판단 편향이 실제로 데이터에서 관찰되는지, 어떤 조건에서 두드러지는지 검증되지 않은 상태였습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Approach" data-kr="사고 과정">사고 과정</h2>
+        <p data-en="Adopted a multiple decision model as the theoretical basis. Predicted that as anomaly frequency increases, the decision criterion lowers — increasing detection but also false alarms — and formulated three testable hypotheses." data-kr="다중의사결정 모형을 이론적 근거로 채택했습니다. 이상 발생 빈도가 높아질수록 판단 준거가 낮아져 탐지는 늘지만 오탐도 함께 늘 것이라는 방향성을 예측하고, 이를 3개의 검증 가능한 가설로 구체화했습니다.">다중의사결정 모형을 이론적 근거로 채택했습니다. 이상 발생 빈도가 높아질수록 판단 준거가 낮아져 탐지는 늘지만 오탐도 함께 늘 것이라는 방향성을 예측하고, 이를 3개의 검증 가능한 가설로 구체화했습니다.</p>
+        <div class="subpage-highlight">
+          <p data-en="Before analysis, explicit data quality criteria were established first. Trials with response times under 100ms (possible automatic responses) and over 1.5 seconds (possible attention lapses) were defined as outliers and removed. Without pre-specifying these criteria, standards could shift based on results after analysis." data-kr="분석 전 데이터 품질 확보를 위한 명시적 기준을 먼저 설정했습니다. 반응시간 100ms 미만(자동반응 가능성)과 1.5초 초과(주의 이탈 가능성) 시행을 극단치로 정의하고 제거했습니다. 기준을 사전에 명시하지 않으면 분석 후 결과에 따라 기준이 달라질 수 있기 때문입니다.">분석 전 데이터 품질 확보를 위한 명시적 기준을 먼저 설정했습니다. 반응시간 100ms 미만(자동반응 가능성)과 1.5초 초과(주의 이탈 가능성) 시행을 극단치로 정의하고 제거했습니다. 기준을 사전에 명시하지 않으면 분석 후 결과에 따라 기준이 달라질 수 있기 때문입니다.</p>
+        </div>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Solution" data-kr="해결">해결</h2>
+        <p data-en="Designed three anomaly probability levels (20%/50%/80%) and performed the following analyses:" data-kr="이상 발생 확률 3수준(20% / 50% / 80%) 조건을 설계하고 아래 분석을 수행했습니다:">이상 발생 확률 3수준(20% / 50% / 80%) 조건을 설계하고 아래 분석을 수행했습니다:</p>
+        <ul>
+          <li data-en="False alarm/miss rates: Two-way ANOVA (probability condition × change presence) → pairwise comparisons" data-kr="오탐율/미탐율: 확률 조건 × 변화유무 이원분산분석 → 조건별 쌍별 비교">오탐율/미탐율: 확률 조건 × 변화유무 이원분산분석 → 조건별 쌍별 비교</li>
+          <li data-en="Reaction time: Separate analysis of correct rejection RT / hit RT to examine patterns by judgment type" data-kr="반응시간: 정기각 RT / 적중 RT 분리 분석으로 판단 유형별 패턴 확인">반응시간: 정기각 RT / 적중 RT 분리 분석으로 판단 유형별 패턴 확인</li>
+          <li data-en="Signal detection theory: Calculated sensitivity (d') and decision criterion (c) — separating 'actual detection ability change' from 'criterion shift'" data-kr="신호탐지이론 적용: 탐지 민감도(d')와 의사결정 준거(c) 산출 — '실제 탐지 능력의 변화'와 '판단 기준의 변화'를 분리해서 측정">신호탐지이론 적용: 탐지 민감도(d')와 의사결정 준거(c) 산출 — '실제 탐지 능력의 변화'와 '판단 기준의 변화'를 분리해서 측정</li>
+        </ul>
+        <p data-en="Signal detection theory was applied because false alarm/miss rate changes alone cannot distinguish whether 'people became more attentive' vs. 'only the decision criterion shifted.'" data-kr="신호탐지이론을 적용한 이유는 오탐율/미탐율 변화만으로는 '사람이 더 주의 깊어진 것인지' vs '판단 기준만 이동한 것인지'를 구분할 수 없기 때문이었습니다.">신호탐지이론을 적용한 이유는 오탐율/미탐율 변화만으로는 '사람이 더 주의 깊어진 것인지' vs '판단 기준만 이동한 것인지'를 구분할 수 없기 때문이었습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Results" data-kr="결과">결과</h2>
+        <ul>
+          <li data-en="False alarm/miss patterns: Significant differences observed only between high-frequency and low-frequency conditions. Decision bias appears in data when frequency change is sufficiently large" data-kr="오탐/미탐 패턴: 고빈도-저빈도 조건 간에서만 유의한 차이를 확인했습니다. 빈도 변화가 충분히 클 때 판단 편향이 데이터에서 관찰되었습니다">오탐/미탐 패턴: 고빈도-저빈도 조건 간에서만 유의한 차이를 확인했습니다. 빈도 변화가 충분히 클 때 판단 편향이 데이터에서 관찰되었습니다</li>
+          <li data-en="Reaction time: Correct rejection RT increased with higher frequency, while hit RT remained constant. Only 'absent' judgments took longer" data-kr="반응시간: 정기각 RT는 빈도가 높아질수록 지연, 적중 RT는 빈도와 무관하게 일정했습니다. '없다'고 판단할 때만 시간이 더 걸리는 패턴이었습니다">반응시간: 정기각 RT는 빈도가 높아질수록 지연, 적중 RT는 빈도와 무관하게 일정했습니다. '없다'고 판단할 때만 시간이 더 걸리는 패턴이었습니다</li>
+          <li data-en="Signal detection: No significant differences in d' or c between conditions. Likely due to insufficient sample size (n=10) limiting statistical power" data-kr="신호탐지 분석: d', c값 모두 조건 간 유의한 차이가 없었습니다. 표본 수(n=10) 한계로 통계적 검정력이 부족했을 가능성이 있습니다">신호탐지 분석: d', c값 모두 조건 간 유의한 차이가 없었습니다. 표본 수(n=10) 한계로 통계적 검정력이 부족했을 가능성이 있습니다</li>
+        </ul>
+        <div class="subpage-highlight">
+          <p data-en="Non-significant results are still results. The non-significant d' and c values are not evidence that 'there is no bias' — rather, the more appropriate interpretation is 'insufficient sample to confirm.' This was verified through examining the data structure." data-kr="유의하지 않은 결과도 결과입니다. d', c값이 유의하지 않은 것이 '편향이 없다'는 증거가 아니라 '표본이 부족해서 확인하지 못했다'는 해석이 더 적절하다는 것을 데이터 구조를 통해 확인했습니다.">유의하지 않은 결과도 결과입니다. d', c값이 유의하지 않은 것이 '편향이 없다'는 증거가 아니라 '표본이 부족해서 확인하지 못했다'는 해석이 더 적절하다는 것을 데이터 구조를 통해 확인했습니다.</p>
+        </div>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Practical Implications" data-kr="실무 연결">실무 연결</h2>
+        <p data-en="Confirmed through data that human decision criteria shift along with changes in anomaly detection frequency." data-kr="이상 탐지 빈도가 변하는 환경에서 사람의 판단 기준이 함께 이동한다는 것을 데이터로 확인했습니다.">이상 탐지 빈도가 변하는 환경에서 사람의 판단 기준이 함께 이동한다는 것을 데이터로 확인했습니다.</p>
+        <p data-en="Applied to navigation services: in sections with low route deviation alerts, users may respond late or ignore alerts. Conversely, in sections with frequent alerts, unnecessary actions may increase. These patterns can be connected to monitoring metrics in service logs." data-kr="내비게이션 서비스에 적용하면, 경로 이탈 알림 빈도가 낮은 구간에서는 사용자가 알림을 받아도 늦게 반응하거나 무시하는 패턴이 나타날 수 있습니다. 반대로 알림이 자주 뜨는 구간에서는 불필요한 조작이 늘어날 수 있습니다. 이 패턴을 서비스 로그에서 측정하는 모니터링 지표로 연결할 수 있습니다.">내비게이션 서비스에 적용하면, 경로 이탈 알림 빈도가 낮은 구간에서는 사용자가 알림을 받아도 늦게 반응하거나 무시하는 패턴이 나타날 수 있습니다. 반대로 알림이 자주 뜨는 구간에서는 불필요한 조작이 늘어날 수 있습니다. 이 패턴을 서비스 로그에서 측정하는 모니터링 지표로 연결할 수 있습니다.</p>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const overlay = document.querySelector('.mobile-overlay');
+    const closeBtn = document.querySelector('.mobile-close-btn');
+    menuBtn.addEventListener('click', () => overlay.classList.add('active'));
+    closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+    document.querySelectorAll('.mobile-nav a').forEach(link => link.addEventListener('click', () => overlay.classList.remove('active')));
+
+    let currentLang = 'kr';
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang === 'kr' ? 'ko' : 'en';
+      document.querySelectorAll('[data-en][data-kr]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+    const savedLang = localStorage.getItem('lang') || 'kr';
+    setLanguage(savedLang);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결과가 안 나올 때 | Seong-eun Cho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-profile">
+          <div class="profile-photo-wrapper">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <img src="../images/profile.png" alt="Seong-eun Cho" class="profile-photo">
+          </div>
+          <h1 class="sidebar-name">Seong-eun Cho</h1>
+          <p class="sidebar-role">데이터 사이언티스트</p>
+          <p class="sidebar-affiliation">인지신경과학 &times; 데이터 사이언스</p>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="../index.html#about" class="nav-link">소개</a>
+          <a href="../index.html#projects" class="nav-link active">프로젝트</a>
+          <a href="../index.html#skills" class="nav-link">기술 스택</a>
+          <a href="../index.html#contact" class="nav-link">연락처</a>
+        </nav>
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+        <div class="sidebar-social">
+          <a href="https://github.com/chosenne96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:choseeng@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="sidebar-footer">
+          <p>&copy; 2026 Seong-eun Cho</p>
+        </div>
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <span class="mobile-name">Seong-eun Cho</span>
+      <div class="mobile-header-right">
+        <div class="lang-toggle-mobile">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="mobile-overlay">
+      <button class="mobile-close-btn" aria-label="Close">&times;</button>
+      <nav class="mobile-nav">
+        <a href="../index.html#about">소개</a>
+        <a href="../index.html#projects">프로젝트</a>
+        <a href="../index.html#skills">기술 스택</a>
+        <a href="../index.html#contact">연락처</a>
+      </nav>
+    </div>
+
+    <main class="main-content">
+
+      <a href="../index.html#projects" class="subpage-back"><i class="fas fa-arrow-left"></i> <span data-en="Back to Projects" data-kr="프로젝트 목록으로">프로젝트 목록으로</span></a>
+
+      <div class="subpage-header">
+        <div class="subpage-tags">
+          <span class="tag">MATLAB</span>
+          <span class="tag">R</span>
+          <span class="tag" data-en="Preprocessing" data-kr="전처리">전처리</span>
+          <span class="tag">Z-scoring</span>
+        </div>
+        <h1 class="subpage-title" data-en="When Results Don't Show: How Preprocessing Changes Analysis" data-kr="결과가 안 나올 때: 전처리 선택이 분석을 바꾼 경험">결과가 안 나올 때: 전처리 선택이 분석을 바꾼 경험</h1>
+        <p class="subpage-meta" data-en="2024 | SNU Developmental Cognitive Neuroscience Lab" data-kr="2024 | 서울대학교 발달인지신경과학 연구실">2024 | 서울대학교 발달인지신경과학 연구실</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Background" data-kr="배경">배경</h2>
+        <p data-en="Worked with experimental data analyzing the effect of context changes on memory organization. Collected subjective time distance estimates between two events across 4 conditions per participant, with the goal of verifying whether condition differences exist." data-kr="맥락 변화가 기억 조직화에 미치는 영향을 분석하는 실험 데이터를 다뤘습니다. 4개의 조건에서 참가자별로 두 사건 사이의 주관적 시간 거리를 추정한 값을 수집했고, 조건 간 차이가 존재하는지 검증하는 것이 목표였습니다.">맥락 변화가 기억 조직화에 미치는 영향을 분석하는 실험 데이터를 다뤘습니다. 4개의 조건에서 참가자별로 두 사건 사이의 주관적 시간 거리를 추정한 값을 수집했고, 조건 간 차이가 존재하는지 검증하는 것이 목표였습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Problem" data-kr="문제">문제</h2>
+        <p data-en="Condition-level comparison showed no significant differences." data-kr="조건 간 비교 분석을 수행했으나 유의한 차이가 나타나지 않았습니다.">조건 간 비교 분석을 수행했으나 유의한 차이가 나타나지 않았습니다.</p>
+        <div class="subpage-highlight">
+          <p data-en="Upon re-examining the data, a problem was found: each participant's baseline estimation scale was different. Some estimated large values overall while others estimated small values overall. This between-subject variance could be masking the condition effect." data-kr="데이터를 다시 들여다봤을 때 문제를 발견했습니다. 참가자마다 주관적 시간 거리를 추정하는 기준 자체가 달랐습니다. 어떤 참가자는 전반적으로 크게 추정하고, 어떤 참가자는 전반적으로 작게 추정하는 개인 간 편차가 존재했습니다. 이 편차가 조건 효과를 덮고 있을 가능성이 있었습니다.">데이터를 다시 들여다봤을 때 문제를 발견했습니다. 참가자마다 주관적 시간 거리를 추정하는 기준 자체가 달랐습니다. 어떤 참가자는 전반적으로 크게 추정하고, 어떤 참가자는 전반적으로 작게 추정하는 개인 간 편차가 존재했습니다. 이 편차가 조건 효과를 덮고 있을 가능성이 있었습니다.</p>
+        </div>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Approach" data-kr="사고 과정">사고 과정</h2>
+        <p data-en="Did not accept 'no results' as the end of analysis — instead, re-examined the data structure." data-kr="'결과가 안 나온다'는 것을 분석 종료로 받아들이지 않고, 데이터 구조를 재검토했습니다.">'결과가 안 나온다'는 것을 분석 종료로 받아들이지 않고, 데이터 구조를 재검토했습니다.</p>
+        <p data-en="Determined that for subjective estimates, within-person relative patterns matter more than absolute values. Even if someone estimates large values overall, the key question is whether they estimate larger values in context-change conditions." data-kr="주관적 추정값은 절대적인 수치보다 개인 내 상대적 패턴이 중요하다고 판단했습니다. 어떤 사람이 전반적으로 크게 추정하더라도, 맥락이 바뀌는 조건에서 더 크게 추정하는지가 핵심 질문이기 때문입니다.">주관적 추정값은 절대적인 수치보다 개인 내 상대적 패턴이 중요하다고 판단했습니다. 어떤 사람이 전반적으로 크게 추정하더라도, 맥락이 바뀌는 조건에서 더 크게 추정하는지가 핵심 질문이기 때문입니다.</p>
+        <p data-en="Applied within-subject z-scoring to remove between-subject baseline variance. Normalizing by each participant's mean and standard deviation removes absolute level differences and preserves only within-person relative patterns." data-kr="개인 간 기저 편차를 제거하기 위해 참가자별 z-scoring을 적용했습니다. 각 참가자의 평균과 표준편차로 정규화하면, 개인 간 절대적 수준 차이를 제거하고 개인 내 상대적 패턴만 남길 수 있습니다.">개인 간 기저 편차를 제거하기 위해 참가자별 z-scoring을 적용했습니다. 각 참가자의 평균과 표준편차로 정규화하면, 개인 간 절대적 수준 차이를 제거하고 개인 내 상대적 패턴만 남길 수 있습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Solution" data-kr="해결">해결</h2>
+        <p data-en="Re-performed the same condition comparison analysis using within-subject z-scores instead of raw scores." data-kr="원점수 대신 참가자 내 z-score로 변환한 뒤 동일한 조건 간 비교 분석을 재수행했습니다.">원점수 대신 참가자 내 z-score로 변환한 뒤 동일한 조건 간 비교 분석을 재수행했습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Results" data-kr="결과">결과</h2>
+        <p data-en="After z-scoring, significant condition differences were confirmed. Patterns invisible in raw data emerged after removing between-subject variance." data-kr="z-scoring 후 조건 간 유의한 차이가 확인됐습니다. 원본 데이터에서 보이지 않던 패턴이 개인 간 편차를 제거한 후 드러났습니다.">z-scoring 후 조건 간 유의한 차이가 확인됐습니다. 원본 데이터에서 보이지 않던 패턴이 개인 간 편차를 제거한 후 드러났습니다.</p>
+        <div class="subpage-highlight">
+          <p data-en="The choice of preprocessing method had a direct impact on the analysis results." data-kr="전처리 방법 선택이 분석 결과에 직접적인 영향을 미쳤습니다.">전처리 방법 선택이 분석 결과에 직접적인 영향을 미쳤습니다.</p>
+        </div>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Practical Implications" data-kr="실무 연결">실무 연결</h2>
+        <p data-en="In service logs, the same situation occurs where each user's behavioral baseline differs. Some users frequently deviate from routes while others rarely do. In such cases, designing anomaly detection metrics based on within-user relative changes rather than absolute value comparisons can yield more accurate signals." data-kr="서비스 로그에서도 사용자마다 행동 기준치가 다른 상황은 동일하게 발생합니다. 어떤 사용자는 경로 이탈을 자주 하고, 어떤 사용자는 거의 하지 않습니다. 이때 절대값 비교보다 사용자 내 상대적 변화를 기준으로 이상 탐지 지표를 설계하는 것이 더 정확한 신호를 줄 수 있습니다.">서비스 로그에서도 사용자마다 행동 기준치가 다른 상황은 동일하게 발생합니다. 어떤 사용자는 경로 이탈을 자주 하고, 어떤 사용자는 거의 하지 않습니다. 이때 절대값 비교보다 사용자 내 상대적 변화를 기준으로 이상 탐지 지표를 설계하는 것이 더 정확한 신호를 줄 수 있습니다.</p>
+        <p data-en="For example, 'has this user's deviation frequency increased compared to their own baseline' is a more sensitive monitoring metric than 'has this user exceeded the overall average deviation rate.'" data-kr="예를 들어 '이 사용자가 평소보다 이탈 빈도가 높아졌는가'는 '전체 사용자 평균 이탈률을 넘었는가'보다 더 민감한 모니터링 지표가 될 수 있습니다.">예를 들어 '이 사용자가 평소보다 이탈 빈도가 높아졌는가'는 '전체 사용자 평균 이탈률을 넘었는가'보다 더 민감한 모니터링 지표가 될 수 있습니다.</p>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const overlay = document.querySelector('.mobile-overlay');
+    const closeBtn = document.querySelector('.mobile-close-btn');
+    menuBtn.addEventListener('click', () => overlay.classList.add('active'));
+    closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+    document.querySelectorAll('.mobile-nav a').forEach(link => link.addEventListener('click', () => overlay.classList.remove('active')));
+
+    let currentLang = 'kr';
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang === 'kr' ? 'ko' : 'en';
+      document.querySelectorAll('[data-en][data-kr]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+    const savedLang = localStorage.getItem('lang') || 'kr';
+    setLanguage(savedLang);
+  </script>
+
+</body>
+</html>

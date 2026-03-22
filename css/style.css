@@ -554,6 +554,119 @@ a:hover {
   text-align: center;
 }
 
+/* --- Project Subpage --- */
+.subpage-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #7aaed4;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.subpage-back:hover {
+  color: #a8ccdf;
+}
+
+.subpage-header {
+  margin-bottom: 3rem;
+}
+
+.subpage-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.subpage-tags .tag {
+  font-size: 0.75rem;
+}
+
+.subpage-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.subpage-meta {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.subpage-section {
+  margin-bottom: 2.5rem;
+}
+
+.subpage-section-title {
+  font-family: 'Pretendard', 'Inter', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #7aaed4;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.subpage-section p {
+  font-size: 0.95rem;
+  color: #c0c0c0;
+  line-height: 1.85;
+  margin-bottom: 0.8rem;
+}
+
+.subpage-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subpage-section ul li {
+  font-size: 0.95rem;
+  color: #c0c0c0;
+  line-height: 1.85;
+  padding-left: 1.2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.subpage-section ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #7aaed4;
+}
+
+.subpage-highlight {
+  background-color: rgba(122, 174, 212, 0.08);
+  border-left: 3px solid #4a6fa5;
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1rem 0;
+}
+
+.subpage-highlight p {
+  color: #d0d0d0;
+  font-size: 0.93rem;
+}
+
+/* Make project cards clickable */
+a.project-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+a.project-card:hover {
+  color: inherit;
+}
+
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .main-content {
