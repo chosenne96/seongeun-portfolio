@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unity / C# VR 실험 개발 | Seong-eun Cho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-profile">
+          <div class="profile-photo-wrapper">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <img src="../images/profile.png" alt="Seong-eun Cho" class="profile-photo">
+          </div>
+          <h1 class="sidebar-name">Seong-eun Cho</h1>
+          <p class="sidebar-role" data-en="Data Scientist" data-kr="데이터 사이언티스트">데이터 사이언티스트</p>
+          <p class="sidebar-affiliation" data-en="Cognitive Neuroscience &times; Data Science" data-kr="인지신경과학 &times; 데이터 사이언스">인지신경과학 &times; 데이터 사이언스</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="../index.html#about" class="nav-link" data-en="About" data-kr="소개">소개</a>
+          <a href="../index.html#projects" class="nav-link active" data-en="Projects" data-kr="프로젝트">프로젝트</a>
+          <a href="../index.html#skills" class="nav-link" data-en="Skills" data-kr="기술 스택">기술 스택</a>
+          <a href="../index.html#contact" class="nav-link" data-en="Contact" data-kr="연락처">연락처</a>
+        </nav>
+
+        <div class="lang-toggle">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+
+        <div class="sidebar-social">
+          <a href="https://github.com/chosenne96" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:choseeng@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="sidebar-footer">
+          <p>&copy; 2026 Seong-eun Cho</p>
+        </div>
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <span class="mobile-name">Seong-eun Cho</span>
+      <div class="mobile-header-right">
+        <div class="lang-toggle-mobile">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn active" data-lang="kr">KR</button>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-overlay">
+      <button class="mobile-close-btn" aria-label="Close">&times;</button>
+      <nav class="mobile-nav">
+        <a href="../index.html#about" data-en="About" data-kr="소개">소개</a>
+        <a href="../index.html#projects" data-en="Projects" data-kr="프로젝트">프로젝트</a>
+        <a href="../index.html#skills" data-en="Skills" data-kr="기술 스택">기술 스택</a>
+        <a href="../index.html#contact" data-en="Contact" data-kr="연락처">연락처</a>
+      </nav>
+    </div>
+
+    <main class="main-content">
+
+      <a href="../index.html#projects" class="subpage-back"><i class="fas fa-arrow-left"></i> <span data-en="Back to Projects" data-kr="프로젝트 목록으로">프로젝트 목록으로</span></a>
+
+      <div class="subpage-header">
+        <div class="subpage-tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag" data-en="Task Development" data-kr="태스크 개발">태스크 개발</span>
+        </div>
+        <h1 class="subpage-title" data-en="Unity / C# VR Experiment Development: SW Pipeline Design" data-kr="Unity / C# VR 실험 개발 SW 파이프라인 설계">Unity / C# VR 실험 개발 SW 파이프라인 설계</h1>
+        <p class="subpage-meta" data-en="2023 – 2024 | SNU Cognitive Developmental Neuroscience Lab" data-kr="2023 – 2024 | 서울대 인지발달신경과학 연구실">2023 – 2024 | 서울대 인지발달신경과학 연구실</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Background" data-kr="배경">배경</h2>
+        <p data-en="To collect data for my master's research and my senior researcher's doctoral study, I had to build a VR-based spatial navigation experiment task pipeline from scratch. I had no knowledge of C#, and no one in the lab had experience with Unity. The pipeline had to be completed within 6 months and deployed in an actual 7T fMRI experiment." data-kr="석사 연구와 사수의 박사 연구 데이터 수집을 위해 VR 기반 공간 내비게이션 실험 task 파이프라인을 처음부터 개발해야 했습니다. C#을 전혀 모르는 상태였고, 연구실에 Unity를 다뤄본 사람이 없었습니다. 6개월 안에 완성해 실제 7T fMRI 실험에 투입해야 하는 상황이었습니다.">석사 연구와 사수의 박사 연구 데이터 수집을 위해 VR 기반 공간 내비게이션 실험 task 파이프라인을 처음부터 개발해야 했습니다. C#을 전혀 모르는 상태였고, 연구실에 Unity를 다뤄본 사람이 없었습니다. 6개월 안에 완성해 실제 7T fMRI 실험에 투입해야 하는 상황이었습니다.</p>
+        <p data-en="The specific experimental paradigm cannot be disclosed as it is part of unpublished research." data-kr="구체적인 실험 패러다임은 미출판 연구로 공개할 수 없습니다.">구체적인 실험 패러다임은 미출판 연구로 공개할 수 없습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Challenge" data-kr="문제">문제</h2>
+        <p data-en="The hardest part was having to build continuously under unresolved requirements. As cognitive science experiments go, the paradigm kept updating as hypotheses became more concrete — and problems could only be found by implementing each draft and running pilots. There were several cases where I had to rebuild from scratch due to frequent revisions." data-kr="가장 어려웠던 것은 확정되지 않은 요구사항 아래서 계속 만들어야 한다는 것이었습니다. 인지과학 실험 특성상 가설이 구체화될수록 패러다임이 업데이트됐고, 각 가안을 직접 구현해 파일럿을 돌려봐야만 문제를 발견할 수 있었습니다. 수정이 잦아 처음부터 다시 만든 경우도 여러 번이었습니다.">가장 어려웠던 것은 확정되지 않은 요구사항 아래서 계속 만들어야 한다는 것이었습니다. 인지과학 실험 특성상 가설이 구체화될수록 패러다임이 업데이트됐고, 각 가안을 직접 구현해 파일럿을 돌려봐야만 문제를 발견할 수 있었습니다. 수정이 잦아 처음부터 다시 만든 경우도 여러 번이었습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Implementation" data-kr="구현">구현</h2>
+
+        <h3 class="subpage-subsection-title" data-en="Global State Management" data-kr="전역 상태 관리">전역 상태 관리</h3>
+        <p data-en="Managed the entire multi-stage experiment flow using static variables in a single SbjManager class. Tracked current task, phase, environment, trial, and run state globally to maintain data consistency across scene transitions." data-kr="다단계로 구성된 실험 흐름 전체를 단일 SbjManager 클래스의 static 변수로 관리했습니다. 현재 task, phase, 환경, trial, run 상태를 전역에서 추적해 씬 전환 시에도 데이터 일관성을 유지했습니다.">다단계로 구성된 실험 흐름 전체를 단일 SbjManager 클래스의 static 변수로 관리했습니다. 현재 task, phase, 환경, trial, run 상태를 전역에서 추적해 씬 전환 시에도 데이터 일관성을 유지했습니다.</p>
+
+        <h3 class="subpage-subsection-title" data-en="Adaptive Termination Conditions" data-kr="적응형 종료 조건">적응형 종료 조건</h3>
+        <p data-en="Designed an adaptive structure that cumulatively tracked each participant's performance error and terminated a phase when it converged below a threshold. Implemented safeguards with minimum and maximum trial counts to prevent infinite loops in edge cases." data-kr="피험자별 수행 오차를 누적 추적해 기준값 이하로 수렴할 때 단계가 종료되는 적응형 구조를 설계했습니다. 최소/최대 시행 수를 설정해 예외 상황에서 무한 루프를 방지하는 안전장치를 구현했습니다.">피험자별 수행 오차를 누적 추적해 기준값 이하로 수렴할 때 단계가 종료되는 적응형 구조를 설계했습니다. 최소/최대 시행 수를 설정해 예외 상황에서 무한 루프를 방지하는 안전장치를 구현했습니다.</p>
+
+        <h3 class="subpage-subsection-title" data-en="Real-time Data Logging" data-kr="실시간 데이터 로깅">실시간 데이터 로깅</h3>
+        <p data-en="Used StreamWriter to record behavioral data, timestamps, and event logs in real time, separating them into purpose-specific .txt files. Managed file handles globally as a single instance to prevent data loss during scene transitions." data-kr="StreamWriter를 활용해 행동 데이터, 타임스탬프, 이벤트 로그를 용도별 .txt 파일로 분리해 실시간 기록했습니다. 파일 핸들을 전역에서 단일 관리해 씬 전환 시 데이터 손실을 방지하는 구조를 구축했습니다.">StreamWriter를 활용해 행동 데이터, 타임스탬프, 이벤트 로그를 용도별 .txt 파일로 분리해 실시간 기록했습니다. 파일 핸들을 전역에서 단일 관리해 씬 전환 시 데이터 손실을 방지하는 구조를 구축했습니다.</p>
+
+        <h3 class="subpage-subsection-title" data-en="Per-participant Counterbalancing" data-kr="피험자별 카운터밸런싱">피험자별 카운터밸런싱</h3>
+        <p data-en="Implemented logic to automatically assign condition exposure order based on participant number, creating a structure where the experimenter did not need to manually intervene." data-kr="피험자 번호 기반으로 조건 노출 순서를 자동 배정하는 로직을 구현해 실험자가 수동으로 개입하지 않아도 되는 구조를 만들었습니다.">피험자 번호 기반으로 조건 노출 순서를 자동 배정하는 로직을 구현해 실험자가 수동으로 개입하지 않아도 되는 구조를 만들었습니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Results" data-kr="결과">결과</h2>
+        <p data-en="Pipeline completed in 6 months. Collected data from 33 participants in a 7T fMRI environment. The collected behavioral logs connect directly as input data to the MATLAB-based analysis pipeline." data-kr="6개월 만에 파이프라인 완성. 7T fMRI 환경에서 33명의 데이터를 수집했습니다. 수집된 행동 로그는 MATLAB 기반 분석 파이프라인의 입력 데이터로 직접 연결됩니다.">6개월 만에 파이프라인 완성. 7T fMRI 환경에서 33명의 데이터를 수집했습니다. 수집된 행동 로그는 MATLAB 기반 분석 파이프라인의 입력 데이터로 직접 연결됩니다.</p>
+      </div>
+
+      <div class="subpage-section">
+        <h2 class="subpage-section-title" data-en="Practical Implications" data-kr="실무 연결">실무 연결</h2>
+        <p data-en="This is an experience of designing and completing a structure that responds to continuously changing requirements with no prior SW development background. The approach of first thinking through how data will be used in downstream analysis before designing the collection pipeline applies equally to service data pipeline design." data-kr="SW 개발 경험이 없는 상태에서 요구사항이 계속 바뀌는 환경에 대응하는 구조를 직접 설계하고 완성한 경험입니다. 데이터가 이후 분석에서 어떻게 쓰일지를 먼저 따진 뒤 수집 파이프라인을 설계하는 방식은 서비스 데이터 파이프라인 설계에도 동일하게 적용됩니다.">SW 개발 경험이 없는 상태에서 요구사항이 계속 바뀌는 환경에 대응하는 구조를 직접 설계하고 완성한 경험입니다. 데이터가 이후 분석에서 어떻게 쓰일지를 먼저 따진 뒤 수집 파이프라인을 설계하는 방식은 서비스 데이터 파이프라인 설계에도 동일하게 적용됩니다.</p>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const overlay = document.querySelector('.mobile-overlay');
+    const closeBtn = document.querySelector('.mobile-close-btn');
+    menuBtn.addEventListener('click', () => overlay.classList.add('active'));
+    closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+    document.querySelectorAll('.mobile-nav a').forEach(link => link.addEventListener('click', () => overlay.classList.remove('active')));
+
+    // Language toggle
+    let currentLang = 'kr';
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang === 'kr' ? 'ko' : 'en';
+      document.querySelectorAll('[data-en][data-kr]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      localStorage.setItem('lang', lang);
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+    const savedLang = localStorage.getItem('lang') || 'kr';
+    setLanguage(savedLang);
+  </script>
+
+</body>
+</html>

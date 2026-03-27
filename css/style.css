@@ -615,6 +615,15 @@ a:hover {
   border-bottom: 1px solid #3a3a3a;
 }
 
+.subpage-subsection-title {
+  font-family: 'Pretendard', 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d0d0d0;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
 .subpage-section p {
   font-size: 0.95rem;
   color: #c0c0c0;
