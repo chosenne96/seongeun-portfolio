@@ -555,6 +555,82 @@ a:hover {
   text-align: center;
 }
 
+/* --- Education Section --- */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  padding: 1.2rem 1.5rem;
+  background-color: #313131;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+}
+
+.education-degree {
+  font-family: 'Pretendard', 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 0.3rem;
+}
+
+.education-school {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin-bottom: 0.2rem;
+}
+
+.education-detail {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+/* --- Research Experience Section --- */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  padding: 1.5rem;
+  background-color: #313131;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+}
+
+.experience-title {
+  font-family: 'Pretendard', 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 0.4rem;
+}
+
+.experience-period {
+  font-size: 0.85rem;
+  color: #7aaed4;
+  margin-bottom: 0.2rem;
+}
+
+.experience-position {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.experience-desc {
+  font-size: 0.9rem;
+  color: #c0c0c0;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
 /* --- Project Subpage --- */
 .subpage-back {
   display: inline-flex;
