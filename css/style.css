@@ -800,3 +800,214 @@ a.project-card:hover {
     padding: 1.3rem;
   }
 }
+
+/* --- Print Styles --- */
+@media print {
+  /* Reset page layout */
+  * {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+    color: #222 !important;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  @page {
+    margin: 1.5cm 2cm;
+    size: A4;
+  }
+
+  /* Remove sidebar, show content full-width */
+  .site-wrapper {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  .mobile-header,
+  .mobile-overlay,
+  .lang-toggle,
+  .lang-toggle-mobile {
+    display: none !important;
+  }
+
+  .main-content {
+    padding: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  /* Print header — show name and role at top */
+  .main-content::before {
+    content: "Seong-eun Cho — Data Scientist";
+    display: block;
+    font-size: 18pt;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5cm;
+    padding-bottom: 0.3cm;
+    border-bottom: 2px solid #444;
+  }
+
+  /* Section styling */
+  .section {
+    padding: 0.8cm 0 !important;
+    page-break-inside: avoid;
+  }
+
+  .section-title {
+    font-size: 14pt !important;
+    color: #333 !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2cm;
+    margin-bottom: 0.5cm !important;
+  }
+
+  /* Hero text */
+  .hero-text {
+    font-size: 11pt !important;
+    color: #333 !important;
+    width: 100% !important;
+  }
+
+  /* Project cards */
+  .project-grid {
+    gap: 0.5cm !important;
+  }
+
+  .project-card {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+    padding: 0.5cm !important;
+    page-break-inside: avoid;
+    color: #222 !important;
+  }
+
+  .project-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .project-title {
+    font-size: 11pt !important;
+    color: #222 !important;
+  }
+
+  .project-desc {
+    font-size: 9pt !important;
+    color: #444 !important;
+  }
+
+  .project-period {
+    color: #555 !important;
+    font-size: 8pt !important;
+  }
+
+  .tag {
+    background: #e8e8e8 !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+    font-size: 7pt !important;
+  }
+
+  /* Education */
+  .education-item {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+
+  .education-degree {
+    color: #222 !important;
+  }
+
+  .education-school {
+    color: #555 !important;
+  }
+
+  .education-detail {
+    color: #666 !important;
+  }
+
+  /* Experience */
+  .experience-card {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+    page-break-inside: avoid;
+  }
+
+  .experience-title {
+    color: #222 !important;
+  }
+
+  .experience-period {
+    color: #555 !important;
+  }
+
+  .experience-position {
+    color: #555 !important;
+  }
+
+  .experience-desc {
+    color: #444 !important;
+    font-size: 9pt !important;
+  }
+
+  /* Skills */
+  .skill-category {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .skill-category h3 {
+    color: #222 !important;
+  }
+
+  .skill-tags span {
+    background: #e8e8e8 !important;
+    color: #333 !important;
+  }
+
+  /* Contact */
+  .contact-content p {
+    color: #333 !important;
+  }
+
+  .contact-item {
+    background: transparent !important;
+    border: 1px solid #ddd !important;
+    color: #333 !important;
+  }
+
+  .contact-item i {
+    color: #555 !important;
+  }
+
+  /* Links — show URL */
+  a[href^="mailto"]::after {
+    content: none;
+  }
+
+  a {
+    color: #333 !important;
+    text-decoration: none !important;
+  }
+
+  /* Hide blob animations */
+  .blob,
+  .blob-1,
+  .blob-2 {
+    display: none !important;
+  }
+}
